@@ -31,6 +31,10 @@ I tried to use the static-linked binary version but it crashed into a segfault w
         orca_path=/opt/orca-${orca_ver}
         openmpi_path=${orca_path}/openmpi-${openmpi_ver}
 
+on MacOs
+
+        echo 'export PATH="/Applications/orca:$PATH"; export LD_LIBRARY_PATH="/Applications/orca:$LD_LIBRARY_PATH"'  >> ~/.zshrc; source ~/.zshrc
+
 4. Source (in a bash, zsh, fish, etc. shell) the script.
 
         source /opt/orca-5.0.0/orcainit4
